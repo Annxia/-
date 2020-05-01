@@ -1,4 +1,5 @@
 resList = []
+resDict = {}
 
 
 def putRecordToTable(fileType, fileLen):
@@ -15,6 +16,15 @@ def putRecordToTable(fileType, fileLen):
     return resList
 
 
+def putRecordToTableByDict(fileType, fileLen):
+    if fileType in resDict:
+        resDict[fileType] += fileLen
+    else:
+        resDict.update({fileType: fileLen})
+
+    return resDict
+
+
 with open(r"D:\learn-automated-testing\code\resources\log.txt") as fo:
     lines = fo.read().splitlines()
     del lines[0], lines[-1]
@@ -26,6 +36,8 @@ with open(r"D:\learn-automated-testing\code\resources\log.txt") as fo:
         oneinfo = info.split("\t")
         name, size = oneinfo[:2]
         ext = name.split('.')[-1]
-        putRecordToTable(ext,int(size))
+        putRecordToTable(ext, int(size))
+        putRecordToTableByDict(ext, int(size))
 
 print(resList)
+print(resDict)
