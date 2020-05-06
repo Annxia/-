@@ -34,4 +34,4 @@
 def func(a, b, c=0, *args, **kw):
     print(f'a={a}, b={b}, c={c}, args={args}, kw={kw}')
 
-func(1, 2, 3, 'a', 'b')
+func(1, 2, 3, 5)
