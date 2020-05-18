@@ -3,7 +3,7 @@ user_header={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.3
 #https://search.51job.com/
 #51job
 import requests,re
-from test.excel_demo  import excel_init
+from request.excel_demo  import excel_init
 wookBook,wookSheet = excel_init()
 
 def get_pageNum():
