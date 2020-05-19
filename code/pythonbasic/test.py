@@ -25,7 +25,7 @@ def putInfoToDict(fileName):
     return retDict
 
 
-ret = putInfoToDict(r'D:\learn-automated-testing\code\resources\0005_1.txt')
+ret = putInfoToDict(r'/resources/0005_1.txt')
 
 import pprint
 

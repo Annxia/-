@@ -39,7 +39,7 @@ print('-----lesson-21+22-面向对象-----')
 # p1.run()
 # Person.run()
 # print(p1.weight,p2.weight)
-#
+
 '''
 面向对象设计：
     1- 找出有什么对象(类)

@@ -25,7 +25,7 @@ def putRecordToTableByDict(fileType, fileLen):
     return resDict
 
 
-with open(r"D:\learn-automated-testing\code\resources\log.txt") as fo:
+with open(r"/resources/log.txt") as fo:
     lines = fo.read().splitlines()
     del lines[0], lines[-1]
 
