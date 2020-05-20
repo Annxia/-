@@ -1,6 +1,4 @@
-# -*- coding: utf-8 -*-
-#   __author__:lenovo
-#   2020/5/18
+
 import time
 
 from selenium import webdriver

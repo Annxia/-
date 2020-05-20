@@ -1,6 +1,4 @@
-# -*- coding: utf-8 -*-
-#   __author__:lenovo
-#   2020/5/18
+
 
 from selenium import webdriver
 
@@ -52,6 +50,7 @@ print(ele.text)
 """
 # 元素定位的第七种方法
 # 根据 class 名称进行查找, 只返回匹配到的第一个元素，如果找不到，就报错
+# class是复合类，具有多个属性值，任选其中一个就可以，不可以有空格
 ele = driver.find_element_by_class_name("a2")
 print(ele.text)
 """

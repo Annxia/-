@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-#   __author__:lenovo
-#   2020/5/18
 
 from selenium import webdriver
 
