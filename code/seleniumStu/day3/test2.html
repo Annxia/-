@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /* 组合选择符
+            后代选择器 以空格分隔
+            子元素选择器 以大于号分隔
+            相邻兄弟选择器 以加号分隔
+            后续兄弟选择器 以小波浪线分隔
+        */
+
+        /*后代选择器*/
+        /*后代选择器用于选取某元素的后代元素，无论层级有多深*/
+        /*以下实例，将 id 为 2 的元素中的所有 p 标签选中，样式改为红色前景色*/
+        #n2 p {
+            color: #cc0000;
+        }
+
+        /*子元素选择器*/
+        /*子元素选择器只能选中其父元素的直接子元素*/
+        #n4 > p {
+            font-size: 20px
+        }
+
+        /*相邻兄弟选择器*/
+        /*可选择紧接在另一元素背后的元素，且二者拥有相同的父辈元素*/
+        li + li {
+            font-size: 10px;
+        }
+
+        #l1 + li {
+            background: aquamarine;
+        }
+
+        /*后续兄弟选择器*/
+        /*选中指定元素之后的所有弟弟*/
+        #l1 ~ li {
+            color: #cc0000
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="n1">
+    <p>姊妹弟兄皆列土，可怜光彩生门户</p>
+    <div id="n2">
+        <p>遂令天下父母心，不重生男重生女</p>
+        <div id="n3">
+            <p>骊宫高处入青云，仙乐飘飘处处闻</p>
+        </div>
+    </div>
+</div>
+
+<div id="n4">
+    <p>111</p>
+    <div id="n5">
+        <p>222</p>
+        <div id="n6">
+            <p>333</p>
+        </div>
+    </div>
+</div>
+
+<div id="n7">
+    <ol>
+        <li>aaa</li>
+        <li>bbb</li>
+        <li id="l1">ccc</li>
+        <li>ddd</li>
+        <li>eee</li>
+    </ol>
+</div>
+
+
+</body>
+</html>

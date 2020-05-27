@@ -22,7 +22,7 @@ driver.get("https://www.vmall.com/")
 
 print("-------智能家居：新品上市-------")
 # 将当前页面滑动到显示区域
-driver.execute_script("window.scrollBy(0,900)")
+driver.execute_script("window.scrollBy(0,6000)")
 newProducts = driver.find_elements_by_xpath('//*[@id="lc_1098006"]/div/div[2]/div[1]/ul/descendant::li')
 
 for newProduct in newProducts:

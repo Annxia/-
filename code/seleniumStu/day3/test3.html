@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*nth-child(n) 匹配第 n 个某元素*/
+        /*第四个标签，且标签类型为 p，下标计算所有类型的标签*/
+        #a1 > :nth-child(4) {
+            color: #cc0000
+        }
+
+        /*匹配第n个指定类型的标签*/
+        /*以下实例选中 第四个 p标签，下标只计算类型为 p 的*/
+        p:nth-of-type(4) {
+            color: #777777
+        }
+
+        /*匹配倒数第N个标签*/
+        #a2 > p:nth-last-child(1) {
+            background: #00FFFF
+        }
+
+        /*匹配第一个标签*/
+        #a2 > :first-child {
+            font-size: 20px
+        }
+
+        /*匹配最后一个标签*/
+        #a1 :last-child {
+            font-size: 40px
+        }
+    </style>
+</head>
+<body>
+<div id="a1">
+    <p>111</p>
+    <p>222</p>
+    <p>333</p>
+    <a>444</a>
+    <p>555</p>
+    <p>666</p>
+</div>
+
+<div id="a2">
+    <p>111a</p>
+    <p>222a</p>
+    <p>333a</p>
+    <a>444a</a>
+    <p>555a</p>
+    <p>666a</p>
+</div>
+</body>
+</html>

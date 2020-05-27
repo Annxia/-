@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css高级语法解析</title>
+    <style>
+        /* id 选择器*/
+        /*css 中 id 选择器 以 # 来定义*/
+        #abc {
+            color: #cc0000
+        }
+
+        /*class 选择器*/
+        /*css 当中 class 选择器以 . 来定义*/
+        .abd {
+            color: #cc6600
+        }
+
+        /*标签选择器*/
+        /*标签选择器可以选中同类型的html标签元素*/
+        p {
+            background: black
+        }
+
+        /*将标签选择器配合class选择器使用*/
+        a.abd {
+            color: #66cc66
+        }
+
+        /*分组选择器*/
+        /*选中一组HTML元素*/
+        /*在css当中，分组选择器以 , 来定义*/
+        p, .abe {
+            font-size: 20px
+        }
+
+        /*属性选择器*/
+        /*属性选择器选择具有特定属性的HTML元素*/
+        /*css当中属性选择器以 [] 来定义*/
+
+        /* 以下实例，所有具有 title 属性的我都可以选中*/
+        [title] {
+            color: blue
+        }
+
+        /*你也可以为属性指定值，以下实例将会选中所有 title 属性为 n3*/
+        [title="n3"] {
+            font-size: 10px
+        }
+
+        /*也可以指定标签类型*/
+        p[title] {
+            background: violet
+        }
+
+        /*还可以匹配单词边界*/
+        p[title~="world"] {
+            background: black
+        }
+
+
+    </style>
+</head>
+<body>
+
+<p id="abc">汉皇重色思倾国，御宇多年求不得</p>
+<p class="abd">杨家有女初长成，养在深闺人未识</p>
+<a class="abd">天生丽质难自弃，一朝选在君王侧</a>
+<br>
+<a class="abe">回眸一笑百媚生，六宫粉黛无颜色</a>
+<br>
+<span title="n1">春寒赐浴华清池，温泉水滑洗凝脂</span>
+<br>
+<span title="n2">侍儿扶起娇无力，始是新承恩泽时</span>
+<br>
+<span title="n3">云鬓花颜金步摇，芙蓉帐暖度春宵</span>
+<br>
+<span title="n4">春宵苦短日高起，从此君王不早朝</span>
+<br>
+<p title="n5">承欢侍宴无闲暇，春从春游夜专夜</p>
+<br>
+<p title="hello world">后宫佳丽三千人，三千宠爱在一身</p>
+
+</body>
+</html>
