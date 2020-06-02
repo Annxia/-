@@ -1,0 +1,36 @@
+# 域名，我们把网址配置成配置文件
+DOMAIN = "http://127.0.0.1:8088/"
+
+# 超时时间
+TIMEOUT = 10
+
+# 轮询时间
+POLL_FREQUENCY = 0.5
+# driver路径
+driverPath = {
+    "Chrome":r"E:\Program Files\JetBrains\PyCharm 2019.3.3\bin\chromedriver.exe",
+    # "FireFox":r"E:\Program Files\JetBrains\PyCharm 2019.3.3\bin\chromedriver.exe"
+}
+
+# cookie 过期后需更新
+cookieSli = [{'domain': '127.0.0.1',
+ 'httpOnly': False,
+ 'name': 'Hm_lpvt_750463144f16fe69eb3ac11bea1c4436',
+ 'path': '/',
+ 'secure': False,
+ 'value': '1590754997'},
+{'domain': '127.0.0.1',
+ # 'expiry': 1622290997,
+ 'httpOnly': False,
+ 'name': 'Hm_lvt_750463144f16fe69eb3ac11bea1c4436',
+ 'path': '/',
+ 'secure': False,
+ 'value': '1590754981'},
+{'domain': '127.0.0.1',
+ # 'expiry': 1622290980,
+ 'httpOnly': True,
+ 'name': 'beegosessionID',
+ 'path': '/',
+ 'secure': False,
+ 'value': '4b74c469fddf720968b3b9100a7d2e31'}
+]
