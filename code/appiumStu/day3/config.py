@@ -1,0 +1,19 @@
+boss_caps={
+    #移动设备平台
+    'platformName':'Android',
+    #平台OS版本号
+    'plathformVersion':'10',
+    #设备的名称--值可以随便写
+    'deviceName':'test0106',
+    #提供被测app的信息-包名，入口信息
+    # adb shell dumpsys activity recents | findstr intent
+    'appPackage':'com.hpbr.bosszhipin',
+    'appActivity':'.module.launcher.WelcomeActivity',
+    #确保自动化之后不重置app
+    'noReset':True,
+    #设置session的超时时间，单位秒
+    'newCommandTimeout':6000,
+    'automationName':'UiAutomator1',
+    'unicodeKeyboard':True,
+    'resetKeyboard':True
+}

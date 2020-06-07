@@ -1,0 +1,17 @@
+这一行代码发生了什么？
+webdriver.Remote('http://localhost:4723/wd/hub',desired_caps)
+
+1.客户端代码与appiumserver建立连接，并传递caps配置信息
+2.Appiumserver检查配置信息是否符合要求
+3.利用adb工具检查当前连接的移动设备
+4.安装appium-settings与uiautomator2到被测手机（首次运行脚本发生）
+5.手机启动appium-settings作为监听服务，用于和appium-server进行通信
+6.uiautomator2启动被测app
+
+
+#报错信息提供
+1.代码配置项
+2.报错信息（报什么错，哪行代码报错）
+3.系统运行环境-windows/mac
+4.appium版本
+5.手机安卓版本和品牌型号
