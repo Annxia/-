@@ -3,7 +3,6 @@ import time
 
 from appium import webdriver
 
-
 class BossZP():
     def __init__(self):
         #准备自动化配置信息
@@ -68,10 +67,10 @@ class BossZP():
         xpath='//*[@resource-id="com.hpbr.bosszhipin:id/title_container"]//android.widget.TextView'
         title=self.driver.find_element_by_xpath(xpath).text
         print(title)
-        assert title=='测试工程师'
+        assert title=='Python'
 
     #退出
-    # 结束收尾：当对象被销毁时就运行该方法
+    #quit这个函数可不可以做的简单一点
     def __del__(self):
         self.driver.quit()
 
