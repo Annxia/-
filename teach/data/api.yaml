@@ -1,0 +1,43 @@
+--- # 登录模块
+- # test1
+  url: /api/mgr/loginReq
+  method: post
+  detail: 正常登录
+  data:
+    username: auto
+    password: sdfsdfsdf
+  check:
+    retcode: 0
+
+- # test2
+  url: /api/mgr/loginReq
+  method: post
+  detail: 不传帐号，传密码
+  data:
+    username:
+    password: sdfsdfsdf
+  check:
+    retcode: 1
+    reason: 用户或密码错误
+
+- # test3
+  url: /api/mgr/loginReq
+  method: post
+  detail: 传帐号，不传密码
+  data:
+    username: auto
+    password:
+  check:
+    retcode: 1
+    reason: 用户或密码错误
+
+- # test4
+  url: /api/mgr/loginReq
+  method: post
+  detail: 不传帐号，不传密码
+  data:
+    username:
+    password:
+  check:
+    retcode: 1
+    reason: 用户或密码错误

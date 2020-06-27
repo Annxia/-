@@ -1,0 +1,29 @@
+#注释 yaml
+#1. 字典数据
+#name: tom #帐号
+#password: 123456 #密码
+
+#2. 数组（列表）
+#- hello
+#- ann
+#- 100
+
+#3. 组合关系
+#-
+#  name: test
+#  psw: 123456
+#-
+#  aa: 100
+#  bb:
+#    - 10
+#    - 20
+#  str1: 'Hello\nWorld' #原样输出
+#  str2: "Hello\nWorld" #转义输出
+
+# &设置 *取值
+---
+name: &name tom
+age: *name
+---
+aa: 100
+bb: 200

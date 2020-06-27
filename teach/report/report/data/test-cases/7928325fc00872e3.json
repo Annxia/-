@@ -1,0 +1,92 @@
+{
+  "uid" : "7928325fc00872e3",
+  "name" : "test_001[3-4]",
+  "fullName" : "test_01#test_001",
+  "historyId" : "cc0cfa1dc5d82e4b949a17bf91327b89",
+  "time" : {
+    "start" : 1593164088941,
+    "stop" : 1593164088941,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert (3 + 4) == 3",
+  "statusTrace" : "x = 3, y = 4\n\n    @pytest.mark.parametrize('x,y',[(1,2),(3,4),(5,6)])\n    def test_001(x,y):\n>       assert x+y == 3\nE       assert (3 + 4) == 3\n\ntest_01.py:17: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "delete_all_lesson",
+    "time" : {
+      "start" : 1593164086979,
+      "stop" : 1593164088936,
+      "duration" : 1957
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "delete_all_lesson::fin",
+    "time" : {
+      "start" : 1593164089189,
+      "stop" : 1593164089189,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_01"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-GQJA6VO"
+  }, {
+    "name" : "thread",
+    "value" : "13644-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "x",
+    "value" : "3"
+  }, {
+    "name" : "y",
+    "value" : "4"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "7928325fc00872e3.json",
+  "parameterValues" : [ "3", "4" ]
+}

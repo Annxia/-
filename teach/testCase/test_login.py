@@ -1,9 +1,16 @@
 import json
-from Lib.ApiLogin import Login
+
+import allure
+import pytest
+from Lib.ApiLogin import LoginClass
+from Lib.GetYamlData import get_yaml_data
 
 
+@allure.feature('登录模块')
 class TestLogin:
-    def test_Login(self):
-        res = Login().api_login('auto','sdfsdfsdf')[1]
-        print(res)
-        assert json.loads(res)['retcode'] == 0
+    @allure.story('登录接口')
+    # @pytest.mark.parametrize('inData,repsData', get_execlData('1_登录接口', 2, 5, 6, 8))
+    @pytest.mark.parametrize('inData,repsData', get_yaml_data())
+    def test_Login(self, inData, repsData):
+        res = LoginClass().api_login(inData, getSession=False)
+        assert json.loads(res)['retcode'] == json.loads(repsData)['retcode']

@@ -1,0 +1,101 @@
+{
+  "uid" : "a029d888acd2d663",
+  "name" : "test_Login[{\"username\": \"auto\", \"password\": null}-{\"recode\": -1, \"reason\": \"\\u7528\\u6237\\u6216\\u5bc6\\u7801\\u9519\\u8bef\"}]",
+  "fullName" : "test_login.TestLogin#test_Login",
+  "historyId" : "e8a73bf871a1935ae2087da76a4e90ea",
+  "time" : {
+    "start" : 1593164096057,
+    "stop" : 1593164096067,
+    "duration" : 10
+  },
+  "status" : "broken",
+  "statusMessage" : "KeyError: 'retcode'",
+  "statusTrace" : "self = <testCase.test_login.TestLogin object at 0x0481F550>, inData = '{\"username\": \"auto\", \"password\": null}'\nrepsData = '{\"recode\": -1, \"reason\": \"\\\\u7528\\\\u6237\\\\u6216\\\\u5bc6\\\\u7801\\\\u9519\\\\u8bef\"}'\n\n    @allure.story('登录接口')\n    # @pytest.mark.parametrize('inData,repsData', get_execlData('1_登录接口', 2, 5, 6, 8))\n    @pytest.mark.parametrize('inData,repsData', get_yaml_data())\n    def test_Login(self, inData, repsData):\n        res = LoginClass().api_login(inData, getSession=False)\n>       assert json.loads(res)['retcode'] == json.loads(repsData)['retcode']\nE       KeyError: 'retcode'\n\ntest_login.py:17: KeyError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "delete_all_lesson",
+    "time" : {
+      "start" : 1593164092860,
+      "stop" : 1593164095440,
+      "duration" : 2580
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "delete_all_lesson::fin",
+    "time" : {
+      "start" : 1593164096096,
+      "stop" : 1593164096097,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "登录接口"
+  }, {
+    "name" : "feature",
+    "value" : "登录模块"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-GQJA6VO"
+  }, {
+    "name" : "thread",
+    "value" : "13644-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "inData",
+    "value" : "'{\"username\": \"auto\", \"password\": null}'"
+  }, {
+    "name" : "repsData",
+    "value" : "'{\"recode\": -1, \"reason\": \"\\u7528\\u6237\\u6216\\u5bc6\\u7801\\u9519\\u8bef\"}'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "a029d888acd2d663.json",
+  "parameterValues" : [ "'{\"username\": \"auto\", \"password\": null}'", "'{\"recode\": -1, \"reason\": \"\\u7528\\u6237\\u6216\\u5bc6\\u7801\\u9519\\u8bef\"}'" ]
+}

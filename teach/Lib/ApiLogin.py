@@ -1,16 +1,19 @@
+import json
 import requests
+from config import HOST
 
 
-class Login:
-    def api_login(self,username, password):
-        HOST = "http://127.0.0.1:80"
+class LoginClass:
+    def api_login(self, inData, getSession=True):
         login_url = f'{HOST}/api/mgr/loginReq'
-        payload = {'username': username, 'password': password}
+        payload = json.loads(inData)
         reps = requests.post(login_url, data=payload)
         reps.encoding = 'unicode_escape'  # 设置响应编码--显示中文
-        return reps.cookies['sessionid'],reps.text
-
+        if getSession:
+            return reps.cookies['sessionid']
+        else:
+            return reps.text
 
 if __name__ == '__main__':
-    s = Login().login('auto','sdfsdfsdf')
+    s = LoginClass().login('auto','sdfsdfsdf')
     print(s)

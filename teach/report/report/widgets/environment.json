@@ -1,0 +1,16 @@
+[ {
+  "values" : [ "songqin_teach" ],
+  "name" : "Stand"
+}, {
+  "values" : [ "127.0.0.1:80/login" ],
+  "name" : "ApiUrl"
+}, {
+  "values" : [ "77.0.1" ],
+  "name" : "Browser.Version"
+}, {
+  "values" : [ "3.8.2" ],
+  "name" : "python.version"
+}, {
+  "values" : [ "Firefox" ],
+  "name" : "Browser"
+} ]
