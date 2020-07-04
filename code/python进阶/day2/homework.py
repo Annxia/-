@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @project : code
 # @author: Administrator
-# @file: homework.py
+# @file: homeworkTeacher.py
 # @ide: PyCharm
 # @time: 2020/6/30 15:13
 import uuid
