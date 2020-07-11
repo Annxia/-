@@ -23,7 +23,7 @@ def login(f):
 
             if name in user_dict and user_dict[name] == password:
                 f(*args, **kwargs)
-                token = str(uuid.uuid4()).replace("-","",-1)
+                token = str(uuid.uuid4()).replace("-","",-1)  # -1代表替换所有
             else:
                 print("帐号不存在")
     return wrapper

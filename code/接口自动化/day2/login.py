@@ -16,4 +16,4 @@ def login(username, password):
 
 
 if __name__ == '__main__':
-    login('auto','sdfsdfsdf')
+    print(login('auto','sdfsdfsdf'))

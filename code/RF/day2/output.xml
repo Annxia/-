@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.2 on win32)" generated="20200711 20:59:11.563" rpa="false">
+<suite id="s1" name="循环" source="D:\learn-automated-testing\code\RF\day2\循环.robot">
+<test id="s1-t1" name="循环1">
+<kw name="${i} IN [ a | b | c | d | e ]" type="for">
+<kw name="${i} = a" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.604" endtime="20200711 20:59:11.605"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.604" endtime="20200711 20:59:11.605"></status>
+</kw>
+<kw name="${i} = b" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.605" endtime="20200711 20:59:11.605"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.605" endtime="20200711 20:59:11.605"></status>
+</kw>
+<kw name="${i} = c" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.606" endtime="20200711 20:59:11.606"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.606" endtime="20200711 20:59:11.606"></status>
+</kw>
+<kw name="${i} = d" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.606" endtime="20200711 20:59:11.607"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.606" endtime="20200711 20:59:11.607"></status>
+</kw>
+<kw name="${i} = e" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.607" endtime="20200711 20:59:11.608"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.607" endtime="20200711 20:59:11.608"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.603" endtime="20200711 20:59:11.608"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.603" endtime="20200711 20:59:11.608" critical="yes"></status>
+</test>
+<test id="s1-t2" name="循环2">
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>a</arg>
+<arg>b</arg>
+<arg>c</arg>
+<arg>d</arg>
+<arg>e</arg>
+</arguments>
+<assign>
+<var>${list}</var>
+</assign>
+<msg timestamp="20200711 20:59:11.615" level="INFO">${list} = ['a', 'b', 'c', 'd', 'e']</msg>
+<status status="PASS" starttime="20200711 20:59:11.613" endtime="20200711 20:59:11.615"></status>
+</kw>
+<kw name="${i} IN [ @{list} ]" type="for">
+<kw name="${i} = a" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.615" endtime="20200711 20:59:11.616"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.615" endtime="20200711 20:59:11.616"></status>
+</kw>
+<kw name="${i} = b" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.616" endtime="20200711 20:59:11.619"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.616" endtime="20200711 20:59:11.619"></status>
+</kw>
+<kw name="${i} = c" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.619" endtime="20200711 20:59:11.624"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.619" endtime="20200711 20:59:11.624"></status>
+</kw>
+<kw name="${i} = d" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.625" endtime="20200711 20:59:11.626"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.624" endtime="20200711 20:59:11.626"></status>
+</kw>
+<kw name="${i} = e" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.627" endtime="20200711 20:59:11.628"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.626" endtime="20200711 20:59:11.628"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.615" endtime="20200711 20:59:11.628"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.612" endtime="20200711 20:59:11.632" critical="yes"></status>
+</test>
+<test id="s1-t3" name="循环3">
+<kw name="${i} IN RANGE [ 10 ]" type="for">
+<kw name="${i} = 0" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.636" endtime="20200711 20:59:11.637"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.636" endtime="20200711 20:59:11.637"></status>
+</kw>
+<kw name="${i} = 1" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.637" endtime="20200711 20:59:11.639"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.637" endtime="20200711 20:59:11.639"></status>
+</kw>
+<kw name="${i} = 2" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.639" endtime="20200711 20:59:11.645"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.639" endtime="20200711 20:59:11.645"></status>
+</kw>
+<kw name="${i} = 3" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.646" endtime="20200711 20:59:11.647"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.645" endtime="20200711 20:59:11.647"></status>
+</kw>
+<kw name="${i} = 4" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.647" endtime="20200711 20:59:11.650"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.647" endtime="20200711 20:59:11.650"></status>
+</kw>
+<kw name="${i} = 5" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.650" endtime="20200711 20:59:11.651"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.650" endtime="20200711 20:59:11.651"></status>
+</kw>
+<kw name="${i} = 6" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.652" endtime="20200711 20:59:11.654"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.652" endtime="20200711 20:59:11.654"></status>
+</kw>
+<kw name="${i} = 7" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.655" endtime="20200711 20:59:11.656"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.655" endtime="20200711 20:59:11.658"></status>
+</kw>
+<kw name="${i} = 8" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.658" endtime="20200711 20:59:11.659"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.658" endtime="20200711 20:59:11.659"></status>
+</kw>
+<kw name="${i} = 9" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.659" endtime="20200711 20:59:11.660"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.659" endtime="20200711 20:59:11.660"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.636" endtime="20200711 20:59:11.660"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.633" endtime="20200711 20:59:11.661" critical="yes"></status>
+</test>
+<test id="s1-t4" name="循环4">
+<kw name="${i} IN RANGE [ 1 | 11 ]" type="for">
+<kw name="${i} = 1" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.665" endtime="20200711 20:59:11.666"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.665" endtime="20200711 20:59:11.666"></status>
+</kw>
+<kw name="${i} = 2" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.667" endtime="20200711 20:59:11.668"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.666" endtime="20200711 20:59:11.668"></status>
+</kw>
+<kw name="${i} = 3" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.668" endtime="20200711 20:59:11.669"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.668" endtime="20200711 20:59:11.669"></status>
+</kw>
+<kw name="${i} = 4" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.669" endtime="20200711 20:59:11.669"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.669" endtime="20200711 20:59:11.669"></status>
+</kw>
+<kw name="${i} = 5" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.670" endtime="20200711 20:59:11.670"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.669" endtime="20200711 20:59:11.670"></status>
+</kw>
+<kw name="${i} = 6" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.670" endtime="20200711 20:59:11.671"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.670" endtime="20200711 20:59:11.671"></status>
+</kw>
+<kw name="${i} = 7" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.671" endtime="20200711 20:59:11.671"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.671" endtime="20200711 20:59:11.671"></status>
+</kw>
+<kw name="${i} = 8" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.672" endtime="20200711 20:59:11.672"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.672" endtime="20200711 20:59:11.672"></status>
+</kw>
+<kw name="${i} = 9" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.672" endtime="20200711 20:59:11.675"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.672" endtime="20200711 20:59:11.675"></status>
+</kw>
+<kw name="${i} = 10" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.676" endtime="20200711 20:59:11.678"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.675" endtime="20200711 20:59:11.678"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.665" endtime="20200711 20:59:11.678"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.662" endtime="20200711 20:59:11.681" critical="yes"></status>
+</test>
+<test id="s1-t5" name="循环5">
+<kw name="${i} IN RANGE [ 1 | 11 | 2 ]" type="for">
+<kw name="${i} = 1" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.686" endtime="20200711 20:59:11.688"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.685" endtime="20200711 20:59:11.688"></status>
+</kw>
+<kw name="${i} = 3" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.689" endtime="20200711 20:59:11.691"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.689" endtime="20200711 20:59:11.691"></status>
+</kw>
+<kw name="${i} = 5" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.692" endtime="20200711 20:59:11.693"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.691" endtime="20200711 20:59:11.693"></status>
+</kw>
+<kw name="${i} = 7" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.693" endtime="20200711 20:59:11.694"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.693" endtime="20200711 20:59:11.694"></status>
+</kw>
+<kw name="${i} = 9" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20200711 20:59:11.694" endtime="20200711 20:59:11.695"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.694" endtime="20200711 20:59:11.695"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.685" endtime="20200711 20:59:11.695"></status>
+</kw>
+<status status="PASS" starttime="20200711 20:59:11.682" endtime="20200711 20:59:11.696" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200711 20:59:11.566" endtime="20200711 20:59:11.702"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0">Critical Tests</stat>
+<stat pass="5" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" id="s1" name="循环">循环</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
