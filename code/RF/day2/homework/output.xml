@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.2 on win32)" generated="20200711 23:36:10.577" rpa="false">
+<robot generator="Robot 3.2.1 (Python 3.8.2 on win32)" generated="20200722 21:56:15.523" rpa="false">
 <suite id="s1" name="Homework" source="D:\learn-automated-testing\code\RF\day2\homework\homework.robot">
 <test id="s1-t1" name="列出课程">
 <kw name="List Course" library="course_mgr">
 <assign>
 <var>${text}</var>
 </assign>
-<msg timestamp="20200711 23:36:11.581" level="INFO">${text} = ['初中化学001', '初中化学002', '初中化学003', '初中化学004', '初中化学005', '初中化学006']</msg>
-<status status="PASS" starttime="20200711 23:36:10.968" endtime="20200711 23:36:11.581"></status>
+<msg timestamp="20200722 21:56:16.878" level="INFO">${text} = ['初中化学001', '初中化学002', '初中化学003', '初中化学004', '初中化学005', '初中化学006']</msg>
+<status status="PASS" starttime="20200722 21:56:16.084" endtime="20200722 21:56:16.878"></status>
 </kw>
 <kw name="${course} IN [ @{text} ]" type="for">
 <kw name="${course} = 初中化学001" type="foritem">
@@ -16,10 +16,10 @@
 <arguments>
 <arg>${course}</arg>
 </arguments>
-<msg timestamp="20200711 23:36:11.582" level="INFO">初中化学001</msg>
-<status status="PASS" starttime="20200711 23:36:11.581" endtime="20200711 23:36:11.582"></status>
+<msg timestamp="20200722 21:56:16.882" level="INFO">初中化学001</msg>
+<status status="PASS" starttime="20200722 21:56:16.881" endtime="20200722 21:56:16.882"></status>
 </kw>
-<status status="PASS" starttime="20200711 23:36:11.581" endtime="20200711 23:36:11.582"></status>
+<status status="PASS" starttime="20200722 21:56:16.880" endtime="20200722 21:56:16.882"></status>
 </kw>
 <kw name="${course} = 初中化学002" type="foritem">
 <kw name="Log" library="BuiltIn">
@@ -27,10 +27,10 @@
 <arguments>
 <arg>${course}</arg>
 </arguments>
-<msg timestamp="20200711 23:36:11.582" level="INFO">初中化学002</msg>
-<status status="PASS" starttime="20200711 23:36:11.582" endtime="20200711 23:36:11.582"></status>
+<msg timestamp="20200722 21:56:16.884" level="INFO">初中化学002</msg>
+<status status="PASS" starttime="20200722 21:56:16.883" endtime="20200722 21:56:16.884"></status>
 </kw>
-<status status="PASS" starttime="20200711 23:36:11.582" endtime="20200711 23:36:11.582"></status>
+<status status="PASS" starttime="20200722 21:56:16.883" endtime="20200722 21:56:16.884"></status>
 </kw>
 <kw name="${course} = 初中化学003" type="foritem">
 <kw name="Log" library="BuiltIn">
@@ -38,10 +38,10 @@
 <arguments>
 <arg>${course}</arg>
 </arguments>
-<msg timestamp="20200711 23:36:11.583" level="INFO">初中化学003</msg>
-<status status="PASS" starttime="20200711 23:36:11.582" endtime="20200711 23:36:11.583"></status>
+<msg timestamp="20200722 21:56:16.886" level="INFO">初中化学003</msg>
+<status status="PASS" starttime="20200722 21:56:16.885" endtime="20200722 21:56:16.886"></status>
 </kw>
-<status status="PASS" starttime="20200711 23:36:11.582" endtime="20200711 23:36:11.583"></status>
+<status status="PASS" starttime="20200722 21:56:16.884" endtime="20200722 21:56:16.886"></status>
 </kw>
 <kw name="${course} = 初中化学004" type="foritem">
 <kw name="Log" library="BuiltIn">
@@ -49,10 +49,10 @@
 <arguments>
 <arg>${course}</arg>
 </arguments>
-<msg timestamp="20200711 23:36:11.583" level="INFO">初中化学004</msg>
-<status status="PASS" starttime="20200711 23:36:11.583" endtime="20200711 23:36:11.583"></status>
+<msg timestamp="20200722 21:56:16.888" level="INFO">初中化学004</msg>
+<status status="PASS" starttime="20200722 21:56:16.887" endtime="20200722 21:56:16.888"></status>
 </kw>
-<status status="PASS" starttime="20200711 23:36:11.583" endtime="20200711 23:36:11.583"></status>
+<status status="PASS" starttime="20200722 21:56:16.886" endtime="20200722 21:56:16.888"></status>
 </kw>
 <kw name="${course} = 初中化学005" type="foritem">
 <kw name="Log" library="BuiltIn">
@@ -60,10 +60,10 @@
 <arguments>
 <arg>${course}</arg>
 </arguments>
-<msg timestamp="20200711 23:36:11.584" level="INFO">初中化学005</msg>
-<status status="PASS" starttime="20200711 23:36:11.583" endtime="20200711 23:36:11.584"></status>
+<msg timestamp="20200722 21:56:16.889" level="INFO">初中化学005</msg>
+<status status="PASS" starttime="20200722 21:56:16.889" endtime="20200722 21:56:16.889"></status>
 </kw>
-<status status="PASS" starttime="20200711 23:36:11.583" endtime="20200711 23:36:11.584"></status>
+<status status="PASS" starttime="20200722 21:56:16.888" endtime="20200722 21:56:16.889"></status>
 </kw>
 <kw name="${course} = 初中化学006" type="foritem">
 <kw name="Log" library="BuiltIn">
@@ -71,12 +71,12 @@
 <arguments>
 <arg>${course}</arg>
 </arguments>
-<msg timestamp="20200711 23:36:11.584" level="INFO">初中化学006</msg>
-<status status="PASS" starttime="20200711 23:36:11.584" endtime="20200711 23:36:11.584"></status>
+<msg timestamp="20200722 21:56:16.891" level="INFO">初中化学006</msg>
+<status status="PASS" starttime="20200722 21:56:16.891" endtime="20200722 21:56:16.891"></status>
 </kw>
-<status status="PASS" starttime="20200711 23:36:11.584" endtime="20200711 23:36:11.584"></status>
+<status status="PASS" starttime="20200722 21:56:16.890" endtime="20200722 21:56:16.891"></status>
 </kw>
-<status status="PASS" starttime="20200711 23:36:11.581" endtime="20200711 23:36:11.584"></status>
+<status status="PASS" starttime="20200722 21:56:16.879" endtime="20200722 21:56:16.892"></status>
 </kw>
 <kw name="${num} IN RANGE [ 1 | 7 ]" type="for">
 <kw name="${num} = 1" type="foritem">
@@ -88,17 +88,17 @@
 <assign>
 <var>${class}</var>
 </assign>
-<msg timestamp="20200711 23:36:11.585" level="INFO">${class} = ['初中化学001']</msg>
-<status status="PASS" starttime="20200711 23:36:11.585" endtime="20200711 23:36:11.585"></status>
+<msg timestamp="20200722 21:56:16.895" level="INFO">${class} = ['初中化学001']</msg>
+<status status="PASS" starttime="20200722 21:56:16.895" endtime="20200722 21:56:16.895"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${class}</arg>
 </arguments>
-<status status="PASS" starttime="20200711 23:36:11.585" endtime="20200711 23:36:11.585"></status>
+<status status="PASS" starttime="20200722 21:56:16.895" endtime="20200722 21:56:16.896"></status>
 </kw>
-<status status="PASS" starttime="20200711 23:36:11.585" endtime="20200711 23:36:11.585"></status>
+<status status="PASS" starttime="20200722 21:56:16.894" endtime="20200722 21:56:16.896"></status>
 </kw>
 <kw name="${num} = 2" type="foritem">
 <kw name="Create List" library="BuiltIn">
@@ -109,17 +109,17 @@
 <assign>
 <var>${class}</var>
 </assign>
-<msg timestamp="20200711 23:36:11.586" level="INFO">${class} = ['初中化学002']</msg>
-<status status="PASS" starttime="20200711 23:36:11.586" endtime="20200711 23:36:11.586"></status>
+<msg timestamp="20200722 21:56:16.898" level="INFO">${class} = ['初中化学002']</msg>
+<status status="PASS" starttime="20200722 21:56:16.897" endtime="20200722 21:56:16.898"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${class}</arg>
 </arguments>
-<status status="PASS" starttime="20200711 23:36:11.586" endtime="20200711 23:36:11.586"></status>
+<status status="PASS" starttime="20200722 21:56:16.898" endtime="20200722 21:56:16.900"></status>
 </kw>
-<status status="PASS" starttime="20200711 23:36:11.585" endtime="20200711 23:36:11.586"></status>
+<status status="PASS" starttime="20200722 21:56:16.896" endtime="20200722 21:56:16.900"></status>
 </kw>
 <kw name="${num} = 3" type="foritem">
 <kw name="Create List" library="BuiltIn">
@@ -130,17 +130,17 @@
 <assign>
 <var>${class}</var>
 </assign>
-<msg timestamp="20200711 23:36:11.587" level="INFO">${class} = ['初中化学003']</msg>
-<status status="PASS" starttime="20200711 23:36:11.586" endtime="20200711 23:36:11.587"></status>
+<msg timestamp="20200722 21:56:16.902" level="INFO">${class} = ['初中化学003']</msg>
+<status status="PASS" starttime="20200722 21:56:16.901" endtime="20200722 21:56:16.902"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${class}</arg>
 </arguments>
-<status status="PASS" starttime="20200711 23:36:11.587" endtime="20200711 23:36:11.587"></status>
+<status status="PASS" starttime="20200722 21:56:16.903" endtime="20200722 21:56:16.905"></status>
 </kw>
-<status status="PASS" starttime="20200711 23:36:11.586" endtime="20200711 23:36:11.587"></status>
+<status status="PASS" starttime="20200722 21:56:16.901" endtime="20200722 21:56:16.905"></status>
 </kw>
 <kw name="${num} = 4" type="foritem">
 <kw name="Create List" library="BuiltIn">
@@ -151,17 +151,17 @@
 <assign>
 <var>${class}</var>
 </assign>
-<msg timestamp="20200711 23:36:11.588" level="INFO">${class} = ['初中化学004']</msg>
-<status status="PASS" starttime="20200711 23:36:11.587" endtime="20200711 23:36:11.588"></status>
+<msg timestamp="20200722 21:56:16.909" level="INFO">${class} = ['初中化学004']</msg>
+<status status="PASS" starttime="20200722 21:56:16.907" endtime="20200722 21:56:16.909"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${class}</arg>
 </arguments>
-<status status="PASS" starttime="20200711 23:36:11.588" endtime="20200711 23:36:11.588"></status>
+<status status="PASS" starttime="20200722 21:56:16.911" endtime="20200722 21:56:16.912"></status>
 </kw>
-<status status="PASS" starttime="20200711 23:36:11.587" endtime="20200711 23:36:11.588"></status>
+<status status="PASS" starttime="20200722 21:56:16.906" endtime="20200722 21:56:16.912"></status>
 </kw>
 <kw name="${num} = 5" type="foritem">
 <kw name="Create List" library="BuiltIn">
@@ -172,17 +172,17 @@
 <assign>
 <var>${class}</var>
 </assign>
-<msg timestamp="20200711 23:36:11.589" level="INFO">${class} = ['初中化学005']</msg>
-<status status="PASS" starttime="20200711 23:36:11.588" endtime="20200711 23:36:11.589"></status>
+<msg timestamp="20200722 21:56:16.914" level="INFO">${class} = ['初中化学005']</msg>
+<status status="PASS" starttime="20200722 21:56:16.913" endtime="20200722 21:56:16.914"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${class}</arg>
 </arguments>
-<status status="PASS" starttime="20200711 23:36:11.589" endtime="20200711 23:36:11.589"></status>
+<status status="PASS" starttime="20200722 21:56:16.915" endtime="20200722 21:56:16.916"></status>
 </kw>
-<status status="PASS" starttime="20200711 23:36:11.588" endtime="20200711 23:36:11.589"></status>
+<status status="PASS" starttime="20200722 21:56:16.913" endtime="20200722 21:56:16.916"></status>
 </kw>
 <kw name="${num} = 6" type="foritem">
 <kw name="Create List" library="BuiltIn">
@@ -193,19 +193,19 @@
 <assign>
 <var>${class}</var>
 </assign>
-<msg timestamp="20200711 23:36:11.590" level="INFO">${class} = ['初中化学006']</msg>
-<status status="PASS" starttime="20200711 23:36:11.589" endtime="20200711 23:36:11.590"></status>
+<msg timestamp="20200722 21:56:16.919" level="INFO">${class} = ['初中化学006']</msg>
+<status status="PASS" starttime="20200722 21:56:16.917" endtime="20200722 21:56:16.919"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${class}</arg>
 </arguments>
-<status status="PASS" starttime="20200711 23:36:11.590" endtime="20200711 23:36:11.591"></status>
+<status status="PASS" starttime="20200722 21:56:16.919" endtime="20200722 21:56:16.920"></status>
 </kw>
-<status status="PASS" starttime="20200711 23:36:11.589" endtime="20200711 23:36:11.591"></status>
+<status status="PASS" starttime="20200722 21:56:16.916" endtime="20200722 21:56:16.920"></status>
 </kw>
-<status status="PASS" starttime="20200711 23:36:11.584" endtime="20200711 23:36:11.591"></status>
+<status status="PASS" starttime="20200722 21:56:16.893" endtime="20200722 21:56:16.921"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -213,9 +213,9 @@
 <arg>${course}</arg>
 <arg>@{class}</arg>
 </arguments>
-<status status="PASS" starttime="20200711 23:36:11.591" endtime="20200711 23:36:11.592"></status>
+<status status="PASS" starttime="20200722 21:56:16.921" endtime="20200722 21:56:16.922"></status>
 </kw>
-<status status="PASS" starttime="20200711 23:36:10.967" endtime="20200711 23:36:11.593" critical="yes"></status>
+<status status="PASS" starttime="20200722 21:56:16.082" endtime="20200722 21:56:16.923" critical="yes"></status>
 </test>
 <test id="s1-t2" name="用例2">
 <kw name="Open Browser" library="SeleniumLibrary">
@@ -224,181 +224,181 @@
 <arg>https://www.vmall.com/index.html</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20200711 23:36:11.595" level="INFO">Opening browser 'chrome' to base url 'https://www.vmall.com/index.html'.</msg>
-<status status="PASS" starttime="20200711 23:36:11.595" endtime="20200711 23:36:17.333"></status>
+<msg timestamp="20200722 21:56:16.933" level="INFO">Opening browser 'chrome' to base url 'https://www.vmall.com/index.html'.</msg>
+<status status="PASS" starttime="20200722 21:56:16.932" endtime="20200722 21:56:23.896"></status>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>10</arg>
 </arguments>
-<status status="PASS" starttime="20200711 23:36:17.334" endtime="20200711 23:36:17.336"></status>
+<status status="PASS" starttime="20200722 21:56:23.897" endtime="20200722 21:56:23.902"></status>
 </kw>
 <kw name="Get WebElements" library="SeleniumLibrary">
 <doc>Returns a list of WebElement objects matching the ``locator``.</doc>
 <arguments>
-<arg>css=div.span-968.fl &gt; ul &gt; li&gt; a &gt; div</arg>
+<arg>css=.span-968 .grid-title</arg>
 </arguments>
 <assign>
 <var>${eles}</var>
 </assign>
-<msg timestamp="20200711 23:36:17.360" level="INFO">${eles} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="2c82bd97e2c4f0668a78630e8767edc4", element="8449ccec-63a2-4301-a9d6-3f1c6c6a4e59")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
-<status status="PASS" starttime="20200711 23:36:17.337" endtime="20200711 23:36:17.361"></status>
+<msg timestamp="20200722 21:56:23.943" level="INFO">${eles} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="06ee090c739a517da6d5ca00cb4fe6fa", element="730858f0-5f9d-4545-a08b-47475bb7b489")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20200722 21:56:23.903" endtime="20200722 21:56:23.944"></status>
 </kw>
 <kw name="${ele} IN [ @{eles} ]" type="for">
-<kw name="${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;2c82bd97e2c4f0668a78630e8767edc4&quot;, element=&quot;8449ccec-63a2-4301-a9d6-3f1c6c6a4e59&quot;)&gt;" type="foritem">
+<kw name="${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;06ee090c739a517da6d5ca00cb4fe6fa&quot;, element=&quot;730858f0-5f9d-4545-a08b-47475bb7b489&quot;)&gt;" type="foritem">
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${ele.text}</arg>
 </arguments>
-<msg timestamp="20200711 23:36:17.380" level="INFO">HUAWEI P40 Pro+</msg>
-<status status="PASS" starttime="20200711 23:36:17.362" endtime="20200711 23:36:17.380"></status>
+<msg timestamp="20200722 21:56:24.231" level="INFO">HUAWEI P40 Pro+</msg>
+<status status="PASS" starttime="20200722 21:56:23.945" endtime="20200722 21:56:24.231"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${ele.text}</arg>
 </arguments>
-<status status="PASS" starttime="20200711 23:36:17.380" endtime="20200711 23:36:17.390"></status>
+<status status="PASS" starttime="20200722 21:56:24.232" endtime="20200722 21:56:24.248"></status>
 </kw>
-<status status="PASS" starttime="20200711 23:36:17.362" endtime="20200711 23:36:17.390"></status>
+<status status="PASS" starttime="20200722 21:56:23.944" endtime="20200722 21:56:24.248"></status>
 </kw>
-<kw name="${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;2c82bd97e2c4f0668a78630e8767edc4&quot;, element=&quot;205182f4-82aa-402e-bd75-a9bc5f24395b&quot;)&gt;" type="foritem">
+<kw name="${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;06ee090c739a517da6d5ca00cb4fe6fa&quot;, element=&quot;2bf53c04-88f2-43be-9fbc-e352001187db&quot;)&gt;" type="foritem">
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${ele.text}</arg>
 </arguments>
-<msg timestamp="20200711 23:36:17.413" level="INFO">荣耀30</msg>
-<status status="PASS" starttime="20200711 23:36:17.390" endtime="20200711 23:36:17.413"></status>
+<msg timestamp="20200722 21:56:24.277" level="INFO">荣耀30</msg>
+<status status="PASS" starttime="20200722 21:56:24.249" endtime="20200722 21:56:24.277"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${ele.text}</arg>
 </arguments>
-<status status="PASS" starttime="20200711 23:36:17.413" endtime="20200711 23:36:17.423"></status>
+<status status="PASS" starttime="20200722 21:56:24.277" endtime="20200722 21:56:24.288"></status>
 </kw>
-<status status="PASS" starttime="20200711 23:36:17.390" endtime="20200711 23:36:17.423"></status>
+<status status="PASS" starttime="20200722 21:56:24.249" endtime="20200722 21:56:24.288"></status>
 </kw>
-<kw name="${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;2c82bd97e2c4f0668a78630e8767edc4&quot;, element=&quot;de1926f1-f252-4558-8ef5-257075ab05d0&quot;)&gt;" type="foritem">
+<kw name="${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;06ee090c739a517da6d5ca00cb4fe6fa&quot;, element=&quot;e9c9c9e8-ef87-48c2-b29a-b93648330d0a&quot;)&gt;" type="foritem">
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${ele.text}</arg>
 </arguments>
-<msg timestamp="20200711 23:36:17.448" level="INFO">HUAWEI Mate 30 5G</msg>
-<status status="PASS" starttime="20200711 23:36:17.424" endtime="20200711 23:36:17.448"></status>
+<msg timestamp="20200722 21:56:24.312" level="INFO">HUAWEI Mate 30 5G</msg>
+<status status="PASS" starttime="20200722 21:56:24.289" endtime="20200722 21:56:24.312"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${ele.text}</arg>
 </arguments>
-<status status="PASS" starttime="20200711 23:36:17.449" endtime="20200711 23:36:17.460"></status>
+<status status="PASS" starttime="20200722 21:56:24.313" endtime="20200722 21:56:24.323"></status>
 </kw>
-<status status="PASS" starttime="20200711 23:36:17.424" endtime="20200711 23:36:17.460"></status>
+<status status="PASS" starttime="20200722 21:56:24.289" endtime="20200722 21:56:24.323"></status>
 </kw>
-<kw name="${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;2c82bd97e2c4f0668a78630e8767edc4&quot;, element=&quot;5a707034-e474-4093-a7a3-60903c8cfa73&quot;)&gt;" type="foritem">
+<kw name="${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;06ee090c739a517da6d5ca00cb4fe6fa&quot;, element=&quot;b10f44ff-dca7-414e-9798-15ca3fce1acb&quot;)&gt;" type="foritem">
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${ele.text}</arg>
 </arguments>
-<msg timestamp="20200711 23:36:17.480" level="INFO">荣耀Play4</msg>
-<status status="PASS" starttime="20200711 23:36:17.461" endtime="20200711 23:36:17.481"></status>
+<msg timestamp="20200722 21:56:24.341" level="INFO">荣耀Play4</msg>
+<status status="PASS" starttime="20200722 21:56:24.324" endtime="20200722 21:56:24.341"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${ele.text}</arg>
 </arguments>
-<status status="PASS" starttime="20200711 23:36:17.481" endtime="20200711 23:36:17.492"></status>
+<status status="PASS" starttime="20200722 21:56:24.342" endtime="20200722 21:56:24.357"></status>
 </kw>
-<status status="PASS" starttime="20200711 23:36:17.461" endtime="20200711 23:36:17.492"></status>
+<status status="PASS" starttime="20200722 21:56:24.324" endtime="20200722 21:56:24.357"></status>
 </kw>
-<kw name="${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;2c82bd97e2c4f0668a78630e8767edc4&quot;, element=&quot;3aae0f0b-cc05-4e90-8590-a5437ce3dd26&quot;)&gt;" type="foritem">
+<kw name="${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;06ee090c739a517da6d5ca00cb4fe6fa&quot;, element=&quot;7dfa943d-3e5e-4e3f-996f-fa9f71eb2084&quot;)&gt;" type="foritem">
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${ele.text}</arg>
 </arguments>
-<msg timestamp="20200711 23:36:17.509" level="INFO">HUAWEI Mate 30 Pro 5G</msg>
-<status status="PASS" starttime="20200711 23:36:17.493" endtime="20200711 23:36:17.509"></status>
+<msg timestamp="20200722 21:56:24.380" level="INFO">HUAWEI Mate 30 Pro 5G</msg>
+<status status="PASS" starttime="20200722 21:56:24.358" endtime="20200722 21:56:24.380"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${ele.text}</arg>
 </arguments>
-<status status="PASS" starttime="20200711 23:36:17.509" endtime="20200711 23:36:17.517"></status>
+<status status="PASS" starttime="20200722 21:56:24.380" endtime="20200722 21:56:24.389"></status>
 </kw>
-<status status="PASS" starttime="20200711 23:36:17.493" endtime="20200711 23:36:17.517"></status>
+<status status="PASS" starttime="20200722 21:56:24.358" endtime="20200722 21:56:24.389"></status>
 </kw>
-<kw name="${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;2c82bd97e2c4f0668a78630e8767edc4&quot;, element=&quot;fac2dfaa-02b0-4cd0-bc6f-4faad3bda0ec&quot;)&gt;" type="foritem">
+<kw name="${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;06ee090c739a517da6d5ca00cb4fe6fa&quot;, element=&quot;9a794b76-eb5d-4129-99ca-66a4a5d77bab&quot;)&gt;" type="foritem">
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${ele.text}</arg>
 </arguments>
-<msg timestamp="20200711 23:36:17.536" level="INFO">荣耀X10 Max</msg>
-<status status="PASS" starttime="20200711 23:36:17.518" endtime="20200711 23:36:17.536"></status>
+<msg timestamp="20200722 21:56:24.419" level="INFO">荣耀X10 Max</msg>
+<status status="PASS" starttime="20200722 21:56:24.390" endtime="20200722 21:56:24.420"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${ele.text}</arg>
 </arguments>
-<status status="PASS" starttime="20200711 23:36:17.536" endtime="20200711 23:36:17.545"></status>
+<status status="PASS" starttime="20200722 21:56:24.420" endtime="20200722 21:56:24.434"></status>
 </kw>
-<status status="PASS" starttime="20200711 23:36:17.518" endtime="20200711 23:36:17.545"></status>
+<status status="PASS" starttime="20200722 21:56:24.390" endtime="20200722 21:56:24.435"></status>
 </kw>
-<kw name="${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;2c82bd97e2c4f0668a78630e8767edc4&quot;, element=&quot;0c64fba7-705d-4a98-87fd-2fcd626a75c8&quot;)&gt;" type="foritem">
+<kw name="${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;06ee090c739a517da6d5ca00cb4fe6fa&quot;, element=&quot;65f64969-9786-4e5b-9e2a-6b37d9068138&quot;)&gt;" type="foritem">
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${ele.text}</arg>
 </arguments>
-<msg timestamp="20200711 23:36:17.560" level="INFO">华为畅享Z 5G</msg>
-<status status="PASS" starttime="20200711 23:36:17.545" endtime="20200711 23:36:17.560"></status>
+<msg timestamp="20200722 21:56:24.459" level="INFO">华为畅享Z 5G</msg>
+<status status="PASS" starttime="20200722 21:56:24.436" endtime="20200722 21:56:24.459"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${ele.text}</arg>
 </arguments>
-<status status="PASS" starttime="20200711 23:36:17.560" endtime="20200711 23:36:17.570"></status>
+<status status="PASS" starttime="20200722 21:56:24.460" endtime="20200722 21:56:24.479"></status>
 </kw>
-<status status="PASS" starttime="20200711 23:36:17.545" endtime="20200711 23:36:17.570"></status>
+<status status="PASS" starttime="20200722 21:56:24.435" endtime="20200722 21:56:24.479"></status>
 </kw>
-<kw name="${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;2c82bd97e2c4f0668a78630e8767edc4&quot;, element=&quot;5781b11d-9488-47cc-9fa1-67704299f484&quot;)&gt;" type="foritem">
+<kw name="${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;06ee090c739a517da6d5ca00cb4fe6fa&quot;, element=&quot;d44a2c0d-dc9b-4fb6-8076-f1a18cf1e8a1&quot;)&gt;" type="foritem">
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${ele.text}</arg>
 </arguments>
-<msg timestamp="20200711 23:36:17.586" level="INFO">荣耀 Play4T Pro</msg>
-<status status="PASS" starttime="20200711 23:36:17.570" endtime="20200711 23:36:17.586"></status>
+<msg timestamp="20200722 21:56:24.520" level="INFO">荣耀 Play4T Pro</msg>
+<status status="PASS" starttime="20200722 21:56:24.480" endtime="20200722 21:56:24.520"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${ele.text}</arg>
 </arguments>
-<status status="PASS" starttime="20200711 23:36:17.586" endtime="20200711 23:36:17.593"></status>
+<status status="PASS" starttime="20200722 21:56:24.521" endtime="20200722 21:56:24.531"></status>
 </kw>
-<status status="PASS" starttime="20200711 23:36:17.570" endtime="20200711 23:36:17.593"></status>
+<status status="PASS" starttime="20200722 21:56:24.480" endtime="20200722 21:56:24.531"></status>
 </kw>
-<status status="PASS" starttime="20200711 23:36:17.361" endtime="20200711 23:36:17.593"></status>
+<status status="PASS" starttime="20200722 21:56:23.944" endtime="20200722 21:56:24.531"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20200711 23:36:17.597" endtime="20200711 23:36:19.776"></status>
+<status status="PASS" starttime="20200722 21:56:24.535" endtime="20200722 21:56:26.751"></status>
 </kw>
-<status status="PASS" starttime="20200711 23:36:11.594" endtime="20200711 23:36:19.776" critical="yes"></status>
+<status status="PASS" starttime="20200722 21:56:16.928" endtime="20200722 21:56:26.753" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20200711 23:36:10.579" endtime="20200711 23:36:19.778"></status>
+<status status="PASS" starttime="20200722 21:56:15.527" endtime="20200722 21:56:26.755"></status>
 </suite>
 <statistics>
 <total>

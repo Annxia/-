@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.2 on win32)" generated="20200723 00:32:13.084" rpa="false">
+<suite id="s1" name="Homework" source="D:\learn-automated-testing\code\RF\day3\homework\homework.robot">
+<test id="s1-t1" name="添加课程">
+<kw name="Delete All Lesson" library="course_lib" type="setup">
+<msg timestamp="20200723 00:32:26.605" level="INFO">课程删除完毕，退出循环</msg>
+<status status="PASS" starttime="20200723 00:32:13.493" endtime="20200723 00:32:26.605"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://localhost/mgr/login/login.html</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200723 00:32:26.606" level="INFO">Opening browser 'chrome' to base url 'http://localhost/mgr/login/login.html'.</msg>
+<status status="PASS" starttime="20200723 00:32:26.606" endtime="20200723 00:32:31.002"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<status status="PASS" starttime="20200723 00:32:31.003" endtime="20200723 00:32:31.009"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>auto</arg>
+</arguments>
+<msg timestamp="20200723 00:32:31.010" level="INFO">Typing text 'auto' into text field 'id=username'.</msg>
+<status status="PASS" starttime="20200723 00:32:31.010" endtime="20200723 00:32:31.249"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>sdfsdfsdf</arg>
+</arguments>
+<msg timestamp="20200723 00:32:31.250" level="INFO">Typing text 'sdfsdfsdf' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20200723 00:32:31.250" endtime="20200723 00:32:31.434"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=.btn-success</arg>
+</arguments>
+<msg timestamp="20200723 00:32:31.435" level="INFO">Clicking element 'css=.btn-success'.</msg>
+<status status="PASS" starttime="20200723 00:32:31.434" endtime="20200723 00:32:31.501"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=[ng-click="showAddOne=true"]</arg>
+</arguments>
+<msg timestamp="20200723 00:32:31.502" level="INFO">Clicking element 'css=[ng-click="showAddOne=true"]'.</msg>
+<status status="PASS" starttime="20200723 00:32:31.501" endtime="20200723 00:32:32.460"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>css=[ng-model="addData.name"]</arg>
+<arg>selenium</arg>
+</arguments>
+<msg timestamp="20200723 00:32:32.463" level="INFO">Typing text 'selenium' into text field 'css=[ng-model="addData.name"]'.</msg>
+<status status="PASS" starttime="20200723 00:32:32.462" endtime="20200723 00:32:32.714"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>css=[ng-model="addData.desc"]</arg>
+<arg>webUI课程</arg>
+</arguments>
+<msg timestamp="20200723 00:32:32.715" level="INFO">Typing text 'webUI课程' into text field 'css=[ng-model="addData.desc"]'.</msg>
+<status status="PASS" starttime="20200723 00:32:32.714" endtime="20200723 00:32:32.892"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>css=[ng-model="addData.display_idx"]</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200723 00:32:32.896" level="INFO">Typing text '1' into text field 'css=[ng-model="addData.display_idx"]'.</msg>
+<status status="PASS" starttime="20200723 00:32:32.895" endtime="20200723 00:32:33.047"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=[ng-click="addOne()"]</arg>
+</arguments>
+<msg timestamp="20200723 00:32:33.049" level="INFO">Clicking element 'css=[ng-click="addOne()"]'.</msg>
+<status status="PASS" starttime="20200723 00:32:33.048" endtime="20200723 00:32:33.138"></status>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>css=tbody td:nth-child(2)</arg>
+</arguments>
+<assign>
+<var>${courses}</var>
+</assign>
+<msg timestamp="20200723 00:32:33.567" level="INFO">${courses} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="83d432946d0b04dd0104d402779b66c8", element="ea4f357a-f9c6-4304-9799-f6c0ac9afd2d")&gt;]</msg>
+<status status="PASS" starttime="20200723 00:32:33.139" endtime="20200723 00:32:33.567"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>[course.text for course in $courses]</arg>
+</arguments>
+<assign>
+<var>${res}</var>
+</assign>
+<msg timestamp="20200723 00:32:33.589" level="INFO">${res} = ['selenium']</msg>
+<status status="PASS" starttime="20200723 00:32:33.568" endtime="20200723 00:32:33.589"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>$res==['selenium']</arg>
+</arguments>
+<status status="PASS" starttime="20200723 00:32:33.589" endtime="20200723 00:32:33.590"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200723 00:32:33.590" endtime="20200723 00:32:35.859"></status>
+</kw>
+<status status="PASS" starttime="20200723 00:32:13.492" endtime="20200723 00:32:35.860" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200723 00:32:13.086" endtime="20200723 00:32:35.861"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Homework">Homework</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

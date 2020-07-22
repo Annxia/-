@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.2 on win32)" generated="20200723 00:44:49.708" rpa="false">
+<suite id="s1" name="数据驱动" source="D:\learn-automated-testing\code\RF\day4\数据驱动.robot">
+<test id="s1-t1" name="case1-login">
+<kw name="login-kw">
+<arguments>
+<arg>user1</arg>
+<arg>12345</arg>
+<arg>success</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>输入用户名${name}</arg>
+</arguments>
+<status status="PASS" starttime="20200723 00:44:49.759" endtime="20200723 00:44:49.759"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>输入密码${password}</arg>
+</arguments>
+<status status="PASS" starttime="20200723 00:44:49.760" endtime="20200723 00:44:49.760"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>检查结果${expect}</arg>
+</arguments>
+<status status="PASS" starttime="20200723 00:44:49.761" endtime="20200723 00:44:49.762"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${expect}</arg>
+<arg>success</arg>
+</arguments>
+<status status="PASS" starttime="20200723 00:44:49.762" endtime="20200723 00:44:49.763"></status>
+</kw>
+<status status="PASS" starttime="20200723 00:44:49.758" endtime="20200723 00:44:49.763"></status>
+</kw>
+<kw name="login-kw">
+<arguments>
+<arg>user2</arg>
+<arg>abc</arg>
+<arg>success</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>输入用户名${name}</arg>
+</arguments>
+<status status="PASS" starttime="20200723 00:44:49.769" endtime="20200723 00:44:49.770"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>输入密码${password}</arg>
+</arguments>
+<status status="PASS" starttime="20200723 00:44:49.770" endtime="20200723 00:44:49.771"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>检查结果${expect}</arg>
+</arguments>
+<status status="PASS" starttime="20200723 00:44:49.771" endtime="20200723 00:44:49.772"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${expect}</arg>
+<arg>success</arg>
+</arguments>
+<status status="PASS" starttime="20200723 00:44:49.772" endtime="20200723 00:44:49.774"></status>
+</kw>
+<status status="PASS" starttime="20200723 00:44:49.767" endtime="20200723 00:44:49.775"></status>
+</kw>
+<kw name="login-kw">
+<arguments>
+<arg>user3</arg>
+<arg>123456</arg>
+<arg>fail</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>输入用户名${name}</arg>
+</arguments>
+<status status="PASS" starttime="20200723 00:44:49.779" endtime="20200723 00:44:49.779"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>输入密码${password}</arg>
+</arguments>
+<status status="PASS" starttime="20200723 00:44:49.780" endtime="20200723 00:44:49.781"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>检查结果${expect}</arg>
+</arguments>
+<status status="PASS" starttime="20200723 00:44:49.781" endtime="20200723 00:44:49.782"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${expect}</arg>
+<arg>success</arg>
+</arguments>
+<msg timestamp="20200723 00:44:49.783" level="FAIL">fail != success</msg>
+<status status="FAIL" starttime="20200723 00:44:49.782" endtime="20200723 00:44:49.783"></status>
+</kw>
+<status status="FAIL" starttime="20200723 00:44:49.778" endtime="20200723 00:44:49.783"></status>
+</kw>
+<status status="FAIL" starttime="20200723 00:44:49.756" endtime="20200723 00:44:49.784" critical="yes">fail != success</status>
+</test>
+<status status="FAIL" starttime="20200723 00:44:49.711" endtime="20200723 00:44:49.792"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="数据驱动">数据驱动</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
