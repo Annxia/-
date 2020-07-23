@@ -11,7 +11,7 @@
 
 *** Settings ***
 #导入方式一：day4目录下 robot tc
-#Resource  ../rc/资源文件.robot   #必须写上资源文件的后缀名
+#Resource  ../rc/rc.robot   #必须写上资源文件的后缀名
 #导入方式二：day4目录下 robot -P . tc
 Resource  rc/资源文件.robot
 

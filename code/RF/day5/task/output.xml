@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.2 on win32)" generated="20200723 23:28:42.545" rpa="false">
+<suite id="s1" name="Python扩展库" source="D:\learn-automated-testing\code\RF\day5\task\python扩展库.robot">
+<test id="s1-t1" name="case1">
+<kw name="get user">
+<assign>
+<var>${user}</var>
+</assign>
+<msg timestamp="20200723 23:28:42.611" level="FAIL">No keyword with name 'get user' found.</msg>
+<status status="FAIL" starttime="20200723 23:28:42.611" endtime="20200723 23:28:42.611"></status>
+</kw>
+<status status="FAIL" starttime="20200723 23:28:42.609" endtime="20200723 23:28:42.612" critical="yes">No keyword with name 'get user' found.</status>
+</test>
+<status status="FAIL" starttime="20200723 23:28:42.549" endtime="20200723 23:28:42.616"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Python扩展库">Python扩展库</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200723 23:28:42.605" level="ERROR">Error in file 'D:\learn-automated-testing\code\RF\day5\task\python扩展库.robot' on line 5: Importing test library 'task.stu_lib' failed: ModuleNotFoundError: No module named 'task'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  E:\Program Files (x86)\Python38-32\Scripts\robot.exe
+  e:\program files (x86)\python38-32\python38.zip
+  e:\program files (x86)\python38-32\DLLs
+  e:\program files (x86)\python38-32\lib
+  e:\program files (x86)\python38-32
+  e:\program files (x86)\python38-32\lib\site-packages
+  e:\program files (x86)\python38-32\lib\site-packages\win32
+  e:\program files (x86)\python38-32\lib\site-packages\win32\lib
+  e:\program files (x86)\python38-32\lib\site-packages\Pythonwin</msg>
+</errors>
+</robot>
