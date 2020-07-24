@@ -5,7 +5,7 @@
 # @ide: PyCharm
 # @time: 2020/7/23 23:20
 
-from task.cfg import *
+from task.conf.cfg import *
 def get_user():
     return stu1
 

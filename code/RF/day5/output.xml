@@ -1,38 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.2 on win32)" generated="20200723 23:29:50.156" rpa="false">
-<suite id="s1" name="Task" source="D:\learn-automated-testing\code\RF\day5\task">
-<suite id="s1-s1" name="Python扩展库" source="D:\learn-automated-testing\code\RF\day5\task\python扩展库.robot">
-<test id="s1-s1-t1" name="case1">
-<kw name="Get User" library="task.stu_lib">
+<robot generator="Robot 3.2.1 (Python 3.8.1 on win32)" generated="20200724 17:39:54.087" rpa="false">
+<suite id="s1" name="Task &amp; Task">
+<suite id="s1-s1" name="Task" source="D:\learn-automated-testing\code\RF\day5\task">
+<suite id="s1-s1-s1" name="Python扩展库" source="D:\learn-automated-testing\code\RF\day5\task\python扩展库.robot">
+<test id="s1-s1-s1-t1" name="case1">
+<kw name="Get User" library="task.pylib.stu_lib">
 <assign>
 <var>${user}</var>
 </assign>
-<msg timestamp="20200723 23:29:50.203" level="INFO">${user} = {'name': 'xiaoming', 'age': 12}</msg>
-<status status="PASS" starttime="20200723 23:29:50.203" endtime="20200723 23:29:50.203"></status>
+<msg timestamp="20200724 17:39:54.138" level="INFO">${user} = {'name': 'xiaoming', 'age': 12}</msg>
+<status status="PASS" starttime="20200724 17:39:54.138" endtime="20200724 17:39:54.138"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${user}</arg>
 </arguments>
-<status status="PASS" starttime="20200723 23:29:50.204" endtime="20200723 23:29:50.204"></status>
+<status status="PASS" starttime="20200724 17:39:54.139" endtime="20200724 17:39:54.141"></status>
 </kw>
-<status status="PASS" starttime="20200723 23:29:50.202" endtime="20200723 23:29:50.204" critical="yes"></status>
+<status status="PASS" starttime="20200724 17:39:54.137" endtime="20200724 17:39:54.142" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20200723 23:29:50.191" endtime="20200723 23:29:50.205"></status>
+<test id="s1-s1-s1-t2" name="case2">
+<kw name="Make Money" library="task.pylib.third.Child">
+<status status="PASS" starttime="20200724 17:39:54.145" endtime="20200724 17:39:54.146"></status>
+</kw>
+<kw name="Use Money" library="task.pylib.third.Child">
+<status status="PASS" starttime="20200724 17:39:54.147" endtime="20200724 17:39:54.147"></status>
+</kw>
+<status status="PASS" starttime="20200724 17:39:54.144" endtime="20200724 17:39:54.148" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200724 17:39:54.127" endtime="20200724 17:39:54.150"></status>
 </suite>
-<status status="PASS" starttime="20200723 23:29:50.159" endtime="20200723 23:29:50.207"></status>
+<status status="PASS" starttime="20200724 17:39:54.124" endtime="20200724 17:39:54.153"></status>
+</suite>
+<suite id="s1-s2" name="Task" source="D:\learn-automated-testing\code\RF\day5\task">
+<suite id="s1-s2-s1" name="Python扩展库" source="D:\learn-automated-testing\code\RF\day5\task\python扩展库.robot">
+<test id="s1-s2-s1-t1" name="case1">
+<kw name="Get User" library="task.pylib.stu_lib">
+<assign>
+<var>${user}</var>
+</assign>
+<msg timestamp="20200724 17:39:54.165" level="INFO">${user} = {'name': 'xiaoming', 'age': 12}</msg>
+<status status="PASS" starttime="20200724 17:39:54.165" endtime="20200724 17:39:54.165"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${user}</arg>
+</arguments>
+<status status="PASS" starttime="20200724 17:39:54.165" endtime="20200724 17:39:54.166"></status>
+</kw>
+<status status="PASS" starttime="20200724 17:39:54.164" endtime="20200724 17:39:54.167" critical="yes"></status>
+</test>
+<test id="s1-s2-s1-t2" name="case2">
+<kw name="Make Money" library="task.pylib.third.Child">
+<status status="PASS" starttime="20200724 17:39:54.171" endtime="20200724 17:39:54.173"></status>
+</kw>
+<kw name="Use Money" library="task.pylib.third.Child">
+<status status="PASS" starttime="20200724 17:39:54.173" endtime="20200724 17:39:54.174"></status>
+</kw>
+<status status="PASS" starttime="20200724 17:39:54.171" endtime="20200724 17:39:54.174" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200724 17:39:54.159" endtime="20200724 17:39:54.176"></status>
+</suite>
+<status status="PASS" starttime="20200724 17:39:54.155" endtime="20200724 17:39:54.179"></status>
+</suite>
+<status status="PASS" starttime="20200724 17:39:54.090" endtime="20200724 17:39:54.182"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
+<stat pass="4" fail="0">Critical Tests</stat>
+<stat pass="4" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="Task">Task</stat>
-<stat pass="1" fail="0" id="s1-s1" name="Python扩展库">Task.Python扩展库</stat>
+<stat pass="4" fail="0" id="s1" name="Task &amp; Task">Task &amp; Task</stat>
+<stat pass="2" fail="0" id="s1-s1" name="Task">Task &amp; Task.Task</stat>
+<stat pass="2" fail="0" id="s1-s1-s1" name="Python扩展库">Task &amp; Task.Task.Python扩展库</stat>
+<stat pass="2" fail="0" id="s1-s2" name="Task">Task &amp; Task.Task</stat>
+<stat pass="2" fail="0" id="s1-s2-s1" name="Python扩展库">Task &amp; Task.Task.Python扩展库</stat>
 </suite>
 </statistics>
 <errors>
