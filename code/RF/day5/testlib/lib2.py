@@ -24,9 +24,11 @@ class lib2:
 
 from robot.api import logger
 class lib3():
-    def __init__(self,host,port):
+    def __init__(self,host,port,table='test'):
         self.host = host
         self.port = port
+        self.table = table
 
     def connect_db(self):
         logger.console(f'正在连接数据库，地址：{self.host}:{self.port}')
+        logger.console(f'连接表格:{self.table}')

@@ -13,11 +13,11 @@ case1
     log to console  ${list}
 
 case2
-     ${list}  _returnlist2
+    ${list}  _returnlist2
     log to console  ${list}
 
 case3
-     ${list}  return list3
+    ${list}  return list3
     log to console  ${list}
 
 类关键字
