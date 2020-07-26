@@ -16,9 +16,8 @@
 如果可以，将初始化、清除操作 也改为用 用户关键字实现
 
 *** Settings ***
-Resource  rc.robot
-Suite Setup  WebSetup
-Suite Teardown  WebTeardown
+Resource  rflib/rc.robot
+
 
 *** Test Cases ***
 添加课程
