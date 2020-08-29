@@ -15,5 +15,5 @@ class LoginClass:
             return reps.text
 
 if __name__ == '__main__':
-    s = LoginClass().login('auto','sdfsdfsdf')
+    s = LoginClass().api_login('auto','sdfsdfsdf')
     print(s)

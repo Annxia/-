@@ -9,6 +9,7 @@ def login(username, password):
     reps.encoding = 'unicode_escape'# 设置响应编码--显示中文
 
     return reps.text
+    # return reps.json()
 
 
 if __name__ == '__main__':
